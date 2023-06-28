@@ -83,6 +83,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             --mdb-btn-focus-color: white;
             --mdb-btn-active-color: #332d2d;
         }
+
+
+        @media (min-width: 992px) {
+            .navbar-brand {
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+            }
+
+            .navbar-nav {
+                margin-right: auto;
+            }
+            .right-icons{
+                left: 96.5%;
+                transform: translateX(-50%);
+                position: absolute;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .logo-img{
+                height: 14px;
+            }
+        }
     </style>
 
     <title>Home | Ellis Martin</title>
@@ -127,7 +151,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             </div>
           </nav> -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-lg-0">
             <!-- Container wrapper -->
             <div class="container-fluid">
             <!-- Toggle button -->
@@ -144,13 +168,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                 </button>
                 <a class="navbar-brand ps-2" href="index.html">
                     <img
+                    class="logo-img"
                     src="images/name-logo.png"
-                    height="14"
+                    height="11.5"
                     alt="MDB Logo"
                     loading="lazy"
                     />
-                    <i class="fas fa-arrow-pointer point-logo"></i>
+                    <i class="fas fa-arrow-pointer fa-xs point-logo"></i>
                 </a>
+                <div class="d-flex align-items-center right-icons">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="https://github.com/ellismarto" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a class="text-reset me-3" href="mailto:ellis@gpemartin.com">
+                        <i class="far fa-envelope fa-lg"></i>
+                    </a>
+                </div>
 
             
         
@@ -159,10 +193,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                 <!-- Left links -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link px-3 active" href="#">HOME</a>
+                    <a class="nav-link px-3 py-lg-3 active" href="#">HOME</a>
                 </li>
                 <li class="nav-item dropdown position-static">
-                    <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link px-3 py-lg-3 dropdown-toggle" href="#" id="navbarDropdown" role="button"
                       data-mdb-toggle="dropdown" aria-expanded="false">
                       MY WORK
                       <i class="fas fa-plus fa-xs"></i>
@@ -266,10 +300,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">ABOUT ME</a>
+                    <a class="nav-link px-3 py-lg-3" href="#">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">CONTACT</a>
+                    <a class="nav-link px-3 py-lg-3" href="#">CONTACT</a>
                 </li>
                 </ul>
                 <!-- Left links -->
@@ -279,15 +313,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             
         
             <!-- Right elements -->
-            <div class="d-flex align-items-center">
-                <!-- Icon -->
-                <a class="text-reset me-3" href="https://github.com/ellismarto" target="_blank">
-                    <i class="fab fa-github fa-lg"></i>
-                </a>
-                <a class="text-reset me-3" href="mailto:ellis@gpemartin.com">
-                    <i class="far fa-envelope fa-lg"></i>
-                </a>
-            </div>
+            
             <!-- Right elements -->
             </div>
             <!-- Container wrapper -->
