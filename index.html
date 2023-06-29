@@ -102,13 +102,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         }
 
 
-        .accordion-body {
+        .wrk-accordion-body {
             padding: 0;
             padding-left: 30px;
             padding-right: 30px;
         }
 
-        .accordion-item{
+        .wrk-accordion-item{
             border: 0;
             background-color: transparent;
         }
@@ -256,21 +256,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 
 
                     <div class="accordion d-block d-lg-none" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item wrk-accordion-item">
                           <h2 class="accordion-header">
-                            <button class="nav-link px-3 py-lg-3 btn nav-btn-wrk" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="nav-link px-3 py-lg-3 btn nav-btn-wrk collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               MY WORK
                               <i class="fas fa-plus fa-xs"></i>
+                              <i class="fas fa-minus fa-xs"></i>
                             </button>
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <a class="accordion-body nav-link wrk-sub-link py-2" href="">
+                            <a class="accordion-body wrk-accordion-body nav-link wrk-sub-link py-2" href="">
                                 BEANS & ZINES
                             </a>
-                            <a class="accordion-body nav-link wrk-sub-link py-2" href="">
+                            <a class="accordion-body wrk-accordion-body nav-link wrk-sub-link py-2" href="">
                                 ABSENT SKATE MAG
                             </a>
-                            <a class="accordion-body nav-link wrk-sub-link py-2" href="">
+                            <a class="accordion-body wrk-accordion-body nav-link wrk-sub-link py-2" href="">
                                 ALLURE SKATEBOARDS
                             </a>
                           </div>
@@ -388,17 +389,48 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                 </ul>
                 <!-- Left links -->
             </div>
-            <!-- Collapsible wrapper -->
-
-            
-        
-            <!-- Right elements -->
-            
-            <!-- Right elements -->
             </div>
-            <!-- Container wrapper -->
         </nav>
-        <!-- Navbar -->
+
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
