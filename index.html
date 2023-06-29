@@ -50,7 +50,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             padding-left: 4px;
         }
 
-        .dropdown:hover>.dropdown-menu {
+        .dropdown:hover>.lrg-drp-dwn {
             display: block;
         }
         .dropdown-toggle:after {
@@ -83,6 +83,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             --mdb-btn-focus-color: white;
             --mdb-btn-active-color: #332d2d;
         }
+        .dropdown-item{
+            font-family: "articulat-cf", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 11.5px;
+        }
+
+        .nav-btn-wrk{
+            text-align: left;
+            width: 100%;
+            --mdb-btn-box-shadow: 0;
+        }
 
 
         @media (min-width: 992px) {
@@ -99,6 +111,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                 left: 96.5%;
                 transform: translateX(-50%);
                 position: absolute;
+            }
+            .dropdown:hover>.lrg-drp-dwn {
+                display: block;
+            }
+            .dropdown-item{
+                display: none;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .dropdown:hover>.lrg-drp-dwn {
+                display: none;
             }
         }
 
@@ -196,13 +220,53 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                     <a class="nav-link px-3 py-lg-3 active" href="#">HOME</a>
                 </li>
                 <li class="nav-item dropdown position-static">
-                    <a class="nav-link px-3 py-lg-3 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link px-3 py-lg-3 dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button"
                       data-mdb-toggle="dropdown" aria-expanded="false">
                       MY WORK
                       <i class="fas fa-plus fa-xs"></i>
                     </a>
                     <!-- Dropdown menu -->
-                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="
+
+
+                    
+                    <ul class="dropdown-menu small-drp-dwn" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                          <a class="dropdown-item" href="#">BEANS & ZINES</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">ABSENT SKATE MAG</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">PROJECT ALLURE</a>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+                    <div class="accordion d-block d-lg-none" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="nav-link px-3 py-lg-3 btn nav-btn-wrk" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              MY WORK
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                BEANS & ZINES
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+                    <div class="dropdown-menu lrg-drp-dwn w-100 mt-0" aria-labelledby="navbarDropdown" style="
                                     border-top-left-radius: 0;
                                     border-top-right-radius: 0;
                                   ">
