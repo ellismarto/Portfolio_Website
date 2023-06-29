@@ -94,7 +94,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             text-align: left;
             width: 100%;
             --mdb-btn-box-shadow: 0;
+            --mdb-btn-hover-box-shadow: 0;
+            --mdb-btn-focus-box-shadow: 0;
+            --mdb-btn-active-box-shadow: 0;
+            --mdb-btn-padding-top: 0.5rem;
+            --mdb-btn-line-height: 1.7;
         }
+
+
+        .accordion-body {
+            padding: 0;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .accordion-item{
+            border: 0;
+            background-color: transparent;
+        }
+
+        
 
 
         @media (min-width: 992px) {
@@ -217,7 +236,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                 <!-- Left links -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-lg-3 active" href="#">HOME</a>
+                    <a class="nav-link px-3 py-lg-3 pt-4 active" href="#">HOME</a>
                 </li>
                 <li class="nav-item dropdown position-static">
                     <a class="nav-link px-3 py-lg-3 dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button"
@@ -228,33 +247,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                     <!-- Dropdown menu -->
 
 
-                    
-                    <ul class="dropdown-menu small-drp-dwn" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                          <a class="dropdown-item" href="#">BEANS & ZINES</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">ABSENT SKATE MAG</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">PROJECT ALLURE</a>
-                        </li>
-                    </ul>
-
-
-
-
-
 
                     <div class="accordion d-block d-lg-none" id="accordionExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
                             <button class="nav-link px-3 py-lg-3 btn nav-btn-wrk" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               MY WORK
+                              <i class="fas fa-plus fa-xs"></i>
                             </button>
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body nav-link py-2">
                                 BEANS & ZINES
                             </div>
                           </div>
