@@ -1,3 +1,5 @@
+/* NAVBAR TOGGLER */
+
 .navbar-toggler {
     width: 5px;
     height: 22px;
@@ -87,22 +89,11 @@
 
 
 
-.wrk-heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    text-align: center;
-}
 
 
 
 
-
-
-
-
-
-
-
+/* ANIMATED BANNER */
 
 .marquee {
     width: 100%;
@@ -137,7 +128,7 @@
     width: 200px;
     vertical-align: top;
     margin-left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
   }
   .item2 {
@@ -146,7 +137,7 @@
     width: 200px;
     vertical-align: top;
     margin-left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
   }
   /* Transition */
@@ -159,3 +150,20 @@
       transform: translateX(-100%)
     }
   }
+
+
+
+
+
+
+
+
+
+/* WEBSITE CSS */
+
+.wrk-heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
