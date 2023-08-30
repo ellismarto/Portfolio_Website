@@ -73,6 +73,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             margin-bottom: -0.2rem;
             text-align: left;
         }
+        .wrk-title-drpdwn{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 12px;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
         .wrk-txt{
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 400;
@@ -174,6 +182,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             .navbar-brand {
               padding-left: 3rem!important;
             }
+            .nav-link-mobile{
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-weight: 700;
+              font-style: normal;
+              font-size: 14px;
+            }
         }
 
         @media (min-width: 768px) {
@@ -269,10 +283,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                 <!-- Left links -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-lg-3 pt-4" href="index.html">HOME</a>
+                    <a class="nav-link nav-link-mobile px-3 py-lg-3 pt-4" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item dropdown position-static">
-                    <a class="nav-link px-3 py-lg-3 dropdown-toggle d-none d-lg-block active" href="my-work.html" id="navbarDropdown" role="button"
+                    <a class="nav-link nav-link-mobile px-3 py-lg-3 dropdown-toggle d-none d-lg-block active" href="my-work.html" id="navbarDropdown" role="button"
                       data-mdb-toggle="dropdown" aria-expanded="false">
                       MY WORK
                       <i class="fa-sharp fa-solid fa-plus fa-sm"></i>
@@ -284,21 +298,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                     <div class="accordion d-block d-lg-none" id="accordionExample">
                         <div class="accordion-item wrk-accordion-item">
                           <h2 class="accordion-header">
-                            <button class="nav-link px-3 py-lg-3 btn nav-btn-wrk btn-text collapsed active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span>MY WORK<i class="fa-sharp fa-solid fa-plus fa-sm"></i></span>
+                            <button class="nav-link nav-link-mobile px-3 py-lg-3 btn nav-btn-wrk btn-text collapsed active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span>MY WORK<i class="fa-sharp fa-solid fa-plus fa-sm"></i></span>
                               <b>MY WORK<i class="fa-sharp fa-solid fa-minus"></i></b>
                             </button>
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <a class="accordion-body wrk-accordion-body nav-link wrk-sub-link py-2" href="">
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="">
                                 BEANS & ZINES
                             </a>
-                            <a class="accordion-body wrk-accordion-body nav-link wrk-sub-link py-2" href="">
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="">
                                 ABSENT SKATE MAG
                             </a>
-                            <a class="accordion-body wrk-accordion-body nav-link wrk-sub-link py-2" href="">
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="">
                                 ALLURE SKATEBOARDS
                             </a>
-                            <a class="accordion-body wrk-accordion-body nav-link wrk-sub-link py-2" href="my-work.html">
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="my-work.html">
                                 VIEW ALL
                             </a>
                           </div>
@@ -332,7 +346,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                               </a>
                             </div>
                             <a href="" class="text-dark">
-                              <h5 class="wrk-title">BEANS & ZINES WEBSITE</h5>
+                              <h5 class="wrk-title-drpdwn">BEANS & ZINES WEBSITE</h5>
                               <p class="wrk-txt">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Odit,
@@ -360,7 +374,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                               </a>
                             </div>
                             <a href="" class="text-dark">
-                              <h5 class="wrk-title">ABSENT SKATE MAG</h5>
+                              <h5 class="wrk-title-drpdwn">ABSENT SKATE MAG</h5>
                               <p class="wrk-txt">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Odit,
@@ -388,7 +402,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                               </a>
                             </div>
                             <a href="" class="text-dark">
-                              <h5 class="wrk-title">ALLURE CLOTHING BRAND</h5>
+                              <h5 class="wrk-title-drpdwn">ALLURE CLOTHING BRAND</h5>
                               <p class="wrk-txt">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Odit,
@@ -408,10 +422,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-lg-3" href="#">ABOUT ME</a>
+                    <a class="nav-link nav-link-mobile px-3 py-lg-3" href="#">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-lg-3" href="#">CONTACT</a>
+                    <a class="nav-link nav-link-mobile px-3 py-lg-3" href="#">CONTACT</a>
                 </li>
                 </ul>
                 <!-- Left links -->
