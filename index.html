@@ -128,8 +128,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         }
 
         .navbar-nav .show>.wrk-sub-link{   
-            color: var(--mdb-nav-link-color);
+            color: black;
             cursor: pointer;
+        }
+        .navbar-nav .show>.wrk-sub-link-top{
+          padding-top: 10px !important;
+        }
+        .navbar-nav .show>.wrk-sub-link-btm{
+          padding-bottom: 10px !important;
         }
 
         .btn{--mdb-btn-border-radius: 0rem !important;}
@@ -183,6 +189,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
               font-weight: 700;
               font-style: normal;
               font-size: 14px;
+              color: black;
+              padding-top: 2px !important;
+              padding-bottom: 2px !important;
+            }
+            .nav-link-mobile-top{
+              padding-top: 20px !important;
             }
         }
 
@@ -279,7 +291,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                 <!-- Left links -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-mobile px-3 py-lg-3 pt-4 active" href="index.html">HOME</a>
+                    <a class="nav-link nav-link-mobile nav-link-mobile-top px-3 py-lg-3 pt-4 active" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item dropdown position-static">
                     <a class="nav-link nav-link-mobile px-3 py-lg-3 dropdown-toggle d-none d-lg-block" href="my-work.html" id="navbarDropdown" role="button"
@@ -299,7 +311,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                             </button>
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="">
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link wrk-sub-link-top py-2" href="">
                                 BEANS & ZINES
                             </a>
                             <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="">
@@ -308,7 +320,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                             <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="">
                                 ALLURE SKATEBOARDS
                             </a>
-                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="my-work.html">
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link wrk-sub-link-btm py-2" href="my-work.html">
                                 VIEW ALL
                             </a>
                           </div>
