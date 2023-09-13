@@ -194,7 +194,6 @@
     text-align: left;
     font-size: 15px;
     color: black;
-    width: 80%;
     line-height: normal;
 }
 
@@ -223,10 +222,6 @@
 .navbar-nav .nav-link-about.active{
     color: white;
     background-color: rgb(169, 61, 95);
-}
-
-.contact-form{
-    width: 70%;
 }
 
 @media (min-width: 1400px) {
