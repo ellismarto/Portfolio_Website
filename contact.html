@@ -468,42 +468,76 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             </div>
           </div>
 
-          
-          <div class="row">
-            <div class="col-6">
-              <h4 class="wrk-heading-txt">CONTACT US</h4>
+
+          <div class="row pt-5 pb-5 pb-lg-0">
+            <div class="col-4">
+              <h4 class="website-about-heading">
+                CONTACT
+                <br>
+                ME
+              </h4>
             </div>
-            <div class="col-6">
-              <form class="contact-form mx-auto">
-                <!-- Name input -->
-                <div class="form-outline mb-4">
-                  <input type="text" id="form4Example1" class="form-control" />
-                  <label class="form-label" for="form4Example1">Name</label>
+            <div class="col-7">
+              <div class="row g-5">
+                <div class="col-md-12 col-lg-12">
+                  <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label cntct-title">First Name<span class="cntct-star"> *</span></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback cntct-veri">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label cntct-title">Last Name<span class="cntct-star"> *</span></label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback cntct-veri">
+                          Valid last name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label cntct-title">Email Address<span class="cntct-star"> *</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="" value="" required>
+                        <div class="invalid-feedback cntct-veri">
+                          Please enter a valid email address.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="phoneNumber" class="form-label cntct-title">Phone Number (Optional)</label>
+                        <input type="phoneNumber" class="form-control" id="email" placeholder="" value="">
+                        <div class="invalid-feedback">
+                          Please enter a valid phone number.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="phoneNumber" class="form-label cntct-title">Reason for Contacting<span class="cntct-star"> *</span></label>
+                        <div class="input-group mb-3">
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                      </div>
+                      
+          
+          
+                    <a><button class="w-100 btn btn-primary btn-lg custom-button" data-link="order-confirm.html" type="submit">Send</button></a>
+                  </form>
                 </div>
-              
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form4Example2" class="form-control" />
-                  <label class="form-label" for="form4Example2">Email address</label>
-                </div>
-              
-                <!-- Message input -->
-                <div class="form-outline mb-4">
-                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                  <label class="form-label" for="form4Example3">Message</label>
-                </div>
-              
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-              </form>
+              </div>
             </div>
           </div>
+          
+          
           
 
 
 
         <script src="js/bootstrap.min.js"></script>
         <script src="js/mdb.min.js"></script>
+        <script src="contact.js"></script>
         <script src="https://kit.fontawesome.com/d1df3ba1df.js" crossorigin="anonymous"></script>
         
 
