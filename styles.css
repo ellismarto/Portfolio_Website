@@ -188,11 +188,30 @@
     width: 100%;
     line-height: normal;
 }
+
+.website-wrk-heading{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-align: right;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    line-height: normal;
+}
+
 .website-about-txt{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     text-align: left;
     font-size: 15px;
+    color: black;
+    line-height: normal;
+}
+.website-wrk-txt{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 13px;
     color: black;
     line-height: normal;
 }
@@ -271,6 +290,11 @@
 .navbar-nav .nav-link-about.active{
     color: white;
     background-color: rgb(169, 61, 95);
+}
+
+.cntr-img{
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 1400px) {
