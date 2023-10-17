@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wgv0zip.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wih2pzb.css">
+    
+
+    <!-- Font Awesome -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
+    
+    
+
+
+    <style>
+        body {
+            background-color: white;
+        }
+        .navbar {
+            background-color: rgb(255, 255, 255) !important;
+            --mdb-navbar-box-shadow: 0;
+            border-bottom: 1px solid;
+        }
+        .navbar-brand{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 18px;
+            margin-right: 0;
+        }
+        .nav-link{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 10.5px;
+            color: black;
+        }
+        .nav-link:hover{
+            font-weight: 700;
+        }
+        .navbar-nav .nav-link.active{
+            font-weight: 700;
+        }
+        .point-logo{
+            padding-left: 4px;
+        }
+
+        .dropdown:hover>.lrg-drp-dwn {
+            display: block;
+        }
+        .dropdown-toggle:after {
+            display: none;
+        }
+        .fa-plus{
+            padding-left: 4px;
+        }
+        .fa-minus{
+            padding-left: 4px;
+        }
+        .wrk-title{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+        }
+        .wrk-title-drpdwn{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 12px;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .wrk-txt{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .view-all-btn{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .btn-link{
+            --mdb-btn-hover-bg: #302b2b;
+            --mdb-btn-hover-color: white;
+            --mdb-btn-color: #332d2d;
+            --mdb-btn-focus-color: white;
+            --mdb-btn-active-color: #332d2d;
+        }
+        .dropdown-item{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 11.5px;
+        }
+
+        .nav-btn-wrk{
+            text-align: left;
+            width: 100%;
+            --mdb-btn-box-shadow: 0;
+            --mdb-btn-hover-box-shadow: 0;
+            --mdb-btn-focus-box-shadow: 0;
+            --mdb-btn-active-box-shadow: 0;
+            --mdb-btn-padding-top: 0.5rem;
+            --mdb-btn-line-height: 1.8;
+        }
+
+
+        .wrk-accordion-body {
+            padding: 0;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .wrk-accordion-item{
+            border: 0;
+            background-color: transparent;
+        }
+
+        .navbar-nav .show>.wrk-sub-link{   
+            color: black;
+            cursor: pointer;
+        }
+        .navbar-nav .show>.wrk-sub-link-top{
+          padding-top: 10px !important;
+        }
+        .navbar-nav .show>.wrk-sub-link-btm{
+          padding-bottom: 10px !important;
+        }
+
+        .btn{--mdb-btn-border-radius: 0rem !important;}
+        .btn-text b{display:inline}
+        .btn-text:not(.collapsed)  span{display:none}
+        .btn-text.collapsed b {display:none}
+
+
+        @media (min-width: 992px) {
+            .nav-link{
+              padding-top: 0.75rem!important;
+              padding-bottom: 0.75rem!important;
+            }
+            .navbar-brand {
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+            }
+            .navbar-nav {
+                margin-right: auto;
+            }
+            .fa-plus{
+              padding-left: 2px;
+            }
+            .right-icons{
+                left: 96.5%;
+                transform: translateX(-50%);
+                position: absolute;
+            }
+            .dropdown:hover>.lrg-drp-dwn {
+                display: block;
+            }
+            .dropdown-item{
+                display: none;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .dropdown:hover>.lrg-drp-dwn {
+                display: none;
+            }
+            .navbar {
+              padding-top: 15px !important;
+              padding-bottom: 15px !important;
+            }
+            .navbar-brand {
+              padding-left: 3rem!important;
+            }
+            .nav-link-mobile{
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-weight: 700;
+              font-style: normal;
+              font-size: 14px;
+              color: black;
+              padding-top: 2px !important;
+              padding-bottom: 2px !important;
+            }
+            .nav-link-mobile-top{
+              padding-top: 20px !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .logo-img{
+                height: 30px;
+            }
+        }
+    </style>
+
+    <title>Home | Ellis Martin</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+
+    <body>
+        <!--
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand ps-2" href="index.html">ELLIS MARTIN.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link px-3 active" aria-current="page" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3" href="#">MY WORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3" href="#">ABOUT ME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3" href="#">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3" href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-lg-0">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+            <!-- Toggle button -->
+                <button
+                    class="navbar-toggler d-flex d-lg-none flex-column justify-content-around"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <a class="navbar-brand ps-2" href="index.html">
+                    <img
+                    class="logo-img"
+                    src="images/name-logo-v4.png"
+                    height="21.5"
+                    alt="MDB Logo"
+                    loading="lazy"
+                    />
+                    <!-- <i class="fas fa-arrow-pointer fa-xs point-logo"></i> -->
+                </a>
+                <div class="d-flex align-items-center right-icons">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="https://github.com/ellismarto" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a class="text-reset me-3" href="mailto:ellis@gpemartin.com">
+                        <i class="far fa-envelope fa-lg"></i>
+                    </a>
+                </div>
+
+            
+        
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile nav-link-mobile-top px-3 py-lg-3 pt-4" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link nav-link-mobile px-3 py-lg-3 dropdown-toggle d-none d-lg-block active" href="my-work.html" id="navbarDropdown" role="button"
+                      data-mdb-toggle="dropdown" aria-expanded="false">
+                      MY WORK
+                      <i class="fa-sharp fa-solid fa-plus fa-sm"></i>
+                </a>
+                    <!-- Dropdown menu -->
+
+
+
+                    <div class="accordion d-block d-lg-none" id="accordionExample">
+                        <div class="accordion-item wrk-accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="nav-link nav-link-mobile px-3 py-lg-3 btn nav-btn-wrk btn-text collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span>MY WORK<i class="fa-sharp fa-solid fa-plus fa-sm"></i></span>
+                              <b>MY WORK<i class="fa-sharp fa-solid fa-minus"></i></b>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link wrk-sub-link-top py-2" href="beansandzines.html">
+                                BEANS & ZINES
+                            </a>
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="absent-mag.html">
+                                ABSENT SKATE MAG
+                            </a>
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="allure-sktbrds.html">
+                                ALLURE SKATEBOARDS
+                            </a>
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link py-2" href="plant-buddy.html">
+                                PLANT BUDDY
+                            </a>
+                            <a class="accordion-body wrk-accordion-body nav-link nav-link-mobile wrk-sub-link wrk-sub-link-btm py-2" href="my-work.html">
+                                VIEW ALL
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+                    <div class="dropdown-menu lrg-drp-dwn w-100 mt-0" aria-labelledby="navbarDropdown" style="
+                                    border-top-left-radius: 0;
+                                    border-top-right-radius: 0;
+                                  ">
+                      <div class="container">
+                        <div class="row my-4">
+                          <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4"
+                              data-mdb-ripple-color="light">
+                              <img src="images/beans-zines-work.png" class="img-fluid" />
+                              <a href="beansandzines.html">
+                                <div class="mask" style="
+                                                background-color: rgba(
+                                                  251,
+                                                  251,
+                                                  251,
+                                                  0.35
+                                                );
+                                              "></div>
+                              </a>
+                            </div>
+                            <a href="" class="text-dark">
+                              <h5 class="wrk-title-drpdwn">BEANS & ZINES WEBSITE</h5>
+                              <p class="wrk-txt">
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Odit,
+                                iste aliquid. Sed id nihil magni,
+                                sint vero provident esse numquam
+                                perferendis ducimus dicta adipisci
+                                iusto nam temporibus modi animi
+                                laboriosam?
+                              </p>
+                            </a>
+                          </div>
+                          <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4"
+                              data-mdb-ripple-color="light">
+                              <img src="images/absent-mag-work.png" class="img-fluid" />
+                              <a href="absent-mag.html">
+                                <div class="mask" style="
+                                                background-color: rgba(
+                                                  251,
+                                                  251,
+                                                  251,
+                                                  0.35
+                                                );
+                                              "></div>
+                              </a>
+                            </div>
+                            <a href="" class="text-dark">
+                              <h5 class="wrk-title-drpdwn">ABSENT SKATE MAG</h5>
+                              <p class="wrk-txt">
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Odit,
+                                iste aliquid. Sed id nihil magni,
+                                sint vero provident esse numquam
+                                perferendis ducimus dicta adipisci
+                                iusto nam temporibus modi animi
+                                laboriosam?
+                              </p>
+                            </a>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4"
+                              data-mdb-ripple-color="light">
+                              <img src="images/allure-work.png" class="img-fluid" />
+                              <a href="#!">
+                                <div class="mask" style="
+                                                background-color: rgba(
+                                                  251,
+                                                  251,
+                                                  251,
+                                                  0.35
+                                                );
+                                              "></div>
+                              </a>
+                            </div>
+                            <a href="" class="text-dark">
+                              <h5 class="wrk-title-drpdwn">ALLURE CLOTHING BRAND</h5>
+                              <p class="wrk-txt">
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Odit,
+                                iste aliquid. Sed id nihil magni,
+                                sint vero provident esse numquam
+                                perferendis ducimus dicta adipisci
+                                iusto nam temporibus modi animi
+                                laboriosam?
+                              </p>
+                            </a>
+                          </div>
+                          <div class="col-12 view-all-btn">
+                            <a type="button" class="btn btn-link btn-outline-dark" data-mdb-ripple-color="dark" href="my-work.html">VIEW ALL</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile px-3 py-lg-3" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile px-3 py-lg-3" href="contact.html">CONTACT</a>
+                </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            </div>
+        </nav>
+
+
+
+          <div class="row pt-5">
+            <div class="col-5">
+              <h4 class="website-wrk-heading">
+                PLANT
+                <br>
+                BUDDY
+                <br>
+                PRODUCT
+              </h4>
+            </div>
+          </div>
+
+          <div class="row pt-5">
+            <div class="col-3">
+              <h4 class="website-wrk-heading">
+                BRIEF
+              </h4>
+            </div>
+            <div class="col-lg-7 col-md-8 col-9 pe-5">
+              <p class="website-wrk-txt">
+                You will receive a Design Fiction describing an industry or service that needs a mobile first website and accompanying designed pieces that include but aren’t limited to: Identity systems, posters, menus, physical branding, advertisements, packaging, billboard, bus shelter designs etc. You will use existing images to mock up your designed pieces and display these within a multi-page InDesign template provided to you on blackboard and for you to re-design and present your work. More information will be detailed within the Design Fiction brief.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="row p-3 p-md-5">
+            <div class="col-12 cntr-img">
+              <img src="images/Render Photo 1.png" class="img-fluid" style="width: 70%;">
+            </div>
+          </div>
+
+          <div class="row p-3 p-md-5">
+            <div class="col-12 cntr-img">
+              <img src="images/Render Photo 2.png" class="img-fluid" style="width: 70%;">
+            </div>
+          </div>
+
+          <div class="row p-3 p-md-5">
+            <div class="col-12 cntr-img">
+              <img src="images/Render Photo 3.png" class="img-fluid" style="width: 70%;">
+            </div>
+          </div>
+
+          <div class="row p-3 p-md-5">
+            <div class="col-12 cntr-img">
+              <iframe
+                src="https://youtube.com/embed/cD8ykIusvNw?controls=0">
+              </iframe>
+            </div>
+          </div>
+          
+          
+
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mdb.min.js"></script>
+        <script src="https://kit.fontawesome.com/d1df3ba1df.js" crossorigin="anonymous"></script>
+        
+
+    </body>
+
+</html>
